@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barathi</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            margin-left: 500px;
+
+
+        }
+
+        .cateye {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 250px;
+            margin-left: 700px;
+
+
+
+        }
+
+        .box1{
+            background-color: gray;
+            width: 200px;
+            height: 100px;
+            color: white;
+            border-radius: 10px;
+            margin-left: 620px;
+        }
+         .boxon{
+            width: 70px;
+            box-shadow:3px 4px 5px ;
+            border-radius: 20px ;
+            background-color: black;
+            color: white;
+           
+         }
+        .boxon:hover {
+          background-color: blue;
+          color: white; 
+          box-shadow:3px 4px 5px  black;
+           }
+           .boxoff{
+            width: 70px;
+            box-shadow:2px 5px 6px ;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+            
+           }
+
+        .boxoff:hover {
+           background-color: blue;
+           color: white;
+          
+           }
+    </style>
+</head>
+
+<body>
+
+
+    <div >
+
+        <div class="box">
+            <img id="onbulb" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png" />
+        </div>
+        <div class="cateye">
+            <img id="eyecat" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png" />
+        </div>
+        <div class="box1">
+            <center>
+                <p style="align-items: center;padding-top: 15%;">power off/on</p>
+                <input type="button" class="boxon" value="ON" id="boxxon"onclick="boxlighton()" />
+                <input type="button" class="boxoff" value="OFF" id="boxxoff"onclick="boxlightoff()" />
+            </center>
+        </div>
+
+    </div>
+    <script src="cat.js"></script>
+</body>
+
+</html>
