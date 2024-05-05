@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic light</title>
+    <style>
+        #traffic {
+            height: 550px;
+            width: 200px;
+            background-color: black;
+            border-radius: 30px;
+
+        }
+
+        .bulb {
+            height: 150px;
+            width: 150px;
+            background-color: #111;
+            border-radius: 50%;
+            margin: 20px;
+
+        }
+
+        #light input {
+            display: flex;
+            margin: 40px;
+            margin-top: 100px ;
+        }
+        #part2 {
+            display: flex;
+            margin-left: 200px;
+            justify-content: center;
+                }
+
+        #part1 {
+            display: flex;
+            align-items: center;
+            padding-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;">
+    <div id="part1">
+        <div id="light">
+            <input type="button" value="red" onclick="red()">
+            <input type="button" value="yellow" onclick="yellow()">
+            <input type="button" value="green" onclick="green()">
+        </div>
+    </div>
+
+    <div id="part2">
+        <div id="traffic">
+            <div class="bulb" id="redbulb"></div>
+            <div class="bulb" id="yellowbulb"></div>
+            <div class="bulb" id="greenbulb"></div>
+        </div>
+    </div>
+    </div>
+    <script src="traffic.js">
+
+    </script>
+
+</body>
+
+</html>
